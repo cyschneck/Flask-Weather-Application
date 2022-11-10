@@ -44,4 +44,4 @@ def render_results():
 						zipCode=zip_code)
 
 if __name__ == '__main__':
-	app.run() # only run flask app once
+	app.run("0.0.0.0", port=5000) # only run flask app once
