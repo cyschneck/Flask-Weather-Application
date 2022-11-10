@@ -15,8 +15,7 @@ def get_weather_results(zip_code, api_key):
 	r = requests.get(api_url)
 	return r.json()
 
-# create a simple flask application:
-
+# CREATE A SIMPLE FLASK APPLICATION:
 app = Flask(__name__) # name is configured to be the name of the application replaced at runtime
 
 # map application to a route to a simple webpage
@@ -41,8 +40,8 @@ def render_results():
 						location=location,
 						feels_like=feels_like_temp,
 						weather_description=weather_description,
-						temp=temp)
+						temp=temp,
+						zipCode=zip_code)
 
 if __name__ == '__main__':
 	app.run() # only run flask app once
-	#print(get_weather_results("80305", get_api_key()))

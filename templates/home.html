@@ -1,13 +1,15 @@
 <html>
 	<head>
 		<Title>Weather Dashboard</Title>
+		<link rel="stylesheet" type="text/css" href= "static/styles/home.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h2>Weather Dashboard in Flask</h2>
-		<form action="{{ url_for('render_results') }}" method="post">
-			Location Zip Code: <input type="text" name="zipCode">
+		<h2 class="weatherText">Weather Dashboard in Flask</h2>
+		<form class="weatherText" id="weatherForm" action="{{ url_for('render_results') }}" method="post">
+			Location Zip Code: <input class="weatherText" id="weatherInput" type="text" name="zipCode">
 			<br>
-			<input type="submit" value="Submit">
+			<input class="weatherText" id="weatherSubmit" type="submit" value="Submit">
 		</form>
 	</body>
 </html>

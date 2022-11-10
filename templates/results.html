@@ -1,9 +1,11 @@
 <html>
 	<head>
-		<Title>Results</Title>
+		<Title>Weather at {{ zipCode }}</Title>
+		<link rel="stylesheet" type="text/css" href= "static/styles/results.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div>
+		<div id="weatherResults">
 			<h3>Weather in {{ location }} </h3>
 			<h2>{{ temp }}° F</h2>
 			<h3>{{ weather_description }}</h3>
